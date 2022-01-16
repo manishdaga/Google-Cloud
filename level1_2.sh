@@ -1,3 +1,8 @@
+# Run this on glcloud
+# git clone https://github.com/manishdaga/Google-Cloud/
+# cd Google-Cloud
+# chmod +x ./level1_2.sh
+# ./level1_2.sh
 gcloud config set privateca/location us-west1
 gcloud privateca pools create my-pool-1  --tier=devops
 gcloud privateca pools list
@@ -35,3 +40,4 @@ gcloud privateca certificates create \
     --key-output-file key_file \
     --cert-output-file cert_file;
 openssl x509 -in cert_file -text -noout
+
